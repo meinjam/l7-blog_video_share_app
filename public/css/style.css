@@ -1,0 +1,19 @@
+.relative, .relative1 {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #c4302b;
+    padding: 0.7rem 1.6rem;
+}
+
+.absolute1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #c4302b;
+    padding: 0.4rem 1rem;
+}
