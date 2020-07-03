@@ -23,7 +23,7 @@
                         <tr>
                             <td>{{ $post->id }}</td>
                             <td><img src="{{ asset($post->image) }}" height="70" alt="{{ $post->title }}"></td>
-                            <td>{{ $post->title }}</td>
+                            <td><a href="{{ route('details', $post->slug) }}" target="_blank">{{ $post->title }}</a></td>
                             <td>{{ $post->created_at->format('h:i a, d M Y') }}</td>
                             <td>{{ $post->is_published ? 'Published' : 'Un-Published' }}</td>
                             <td>

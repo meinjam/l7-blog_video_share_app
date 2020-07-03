@@ -23,7 +23,7 @@
                         <tr>
                             <td>{{ $video->id }}</td>
                             <td><img src="{{ asset($video->image) }}" height="70" alt="{{ $video->title }}"></td>
-                            <td>{{ $video->title }}</td>
+                            <td><a href="{{ route('details', $video->slug) }}" target="_blank">{{ $video->title }}</a></td>
                             <td>{{ $video->created_at->format('h:i a, d M Y') }}</td>
                             <td>{{ $video->is_published ? 'Published' : 'Un-Published' }}</td>
                             <td>

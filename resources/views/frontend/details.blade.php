@@ -13,6 +13,8 @@
             <h2 class="mt-3">{{ $post->title }}</h2>
             <p><i class="far fa-clock"></i> {{ $post->created_at->format('h:i a, d M Y') }}</p>
             <p>{{ $post->description }}</p>
+            <h2 class="mb-3">Share This Post?</h2>
+            <div class="addthis_inline_share_toolbox_vtma"></div>
         </div>
     </div>
 </div>
